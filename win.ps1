@@ -6,6 +6,7 @@ try {
 
 $appName = 'TaC9 PC Optimization Suite'
 $downloadUrl = 'https://github.com/Tac-9-Pc-Optimizations/TaC9-Optimization-App/releases/latest/download/TaC9-PC-Optimization-Suite.exe'
+$manifestUrl = 'https://github.com/Tac-9-Pc-Optimizations/TaC9-Optimization-App/releases/latest/download/manifest.json'
 $installDirectory = Join-Path $env:LOCALAPPDATA 'TaC9\App'
 $installedExe = Join-Path $installDirectory 'TaC9-PC-Optimization-Suite.exe'
 $pendingExe = Join-Path $env:TEMP ('TaC9-PC-Optimization-Suite-{0}.exe' -f [Guid]::NewGuid().ToString('N'))
@@ -13,6 +14,23 @@ $pendingExe = Join-Path $env:TEMP ('TaC9-PC-Optimization-Suite-{0}.exe' -f [Guid
 try {
     Write-Host "Downloading $appName..." -ForegroundColor Cyan
     New-Item -ItemType Directory -Force -Path $installDirectory | Out-Null
+
+    try {
+        $channelDirectory = Join-Path $env:ProgramData 'TaC9\Update'
+        $channelPath = Join-Path $channelDirectory 'channel.json'
+        New-Item -ItemType Directory -Force -Path $channelDirectory | Out-Null
+        [IO.File]::WriteAllText(
+            $channelPath,
+            ([ordered]@{
+                schema_version = 1
+                channel = 'stable'
+                manifest_url = $manifestUrl
+            } | ConvertTo-Json -Depth 3),
+            (New-Object Text.UTF8Encoding($false)))
+    } catch {
+        Write-Warning 'The update channel will be repaired when the TaC9 app opens.'
+    }
+
     Invoke-WebRequest -Uri $downloadUrl -OutFile $pendingExe -UseBasicParsing
 
     if (-not (Test-Path -LiteralPath $pendingExe -PathType Leaf) -or (Get-Item -LiteralPath $pendingExe).Length -lt 1MB) {
