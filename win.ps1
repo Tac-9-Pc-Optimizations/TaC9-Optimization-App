@@ -8,7 +8,7 @@ $appName = 'TaC9 PC Optimization Suite'
 $downloadUrl = 'https://github.com/Tac-9-Pc-Optimizations/TaC9-Optimization-App/releases/latest/download/TaC9-PC-Optimization-Suite.exe'
 $installDirectory = Join-Path $env:LOCALAPPDATA 'TaC9\App'
 $installedExe = Join-Path $installDirectory 'TaC9-PC-Optimization-Suite.exe'
-$pendingExe = Join-Path $env:TEMP ('TaC9-PC-Optimization-Suite-{0}.download' -f [Guid]::NewGuid().ToString('N'))
+$pendingExe = Join-Path $env:TEMP ('TaC9-PC-Optimization-Suite-{0}.exe' -f [Guid]::NewGuid().ToString('N'))
 
 try {
     Write-Host "Downloading $appName..." -ForegroundColor Cyan
