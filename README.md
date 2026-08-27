@@ -1,6 +1,6 @@
 # TaC-_-9s PC Optimization Suite
 
-TaC-_-9s PC Optimization Suite is an all-in-one Windows app made for gaming PCs, fresh Windows installs, and anyone who wants an easier way to optimize their PC.
+TaC-_-9s PC Optimization Suite is an all-in-one Windows app made for gaming PCs, fresh Windows installs, and anyone who wants an easier way to optimize their PC or install the TaC9 Call of Duty configuration.
 
 Everything is together in one launcher so you do not have to search through folders for each tool.
 
@@ -22,9 +22,13 @@ Helps install and set up ISLC with options for different amounts of RAM.
 
 Finds Windows apps and system components and lets you choose what you want to remove. Apps have names, descriptions, and safety labels to make everything easier to understand.
 
+### COD Config Installer
+
+Installs the embedded TaC9 Call of Duty player configuration for the Xbox App or Battle.net version, clears only the selected installation's validated shader cache, and keeps a first-seen backup for one-click restore. This utility is also available as a separate free download and does not require a suite license key.
+
 ## Features
 
-- One TaC-_-9s launcher for all four apps
+- One TaC-_-9s launcher for all five apps
 - Saves your license key
 - Windows and system information
 - Gaming and performance options
@@ -32,6 +36,8 @@ Finds Windows apps and system components and lets you choose what you want to re
 - NVIDIA optimization guide
 - ISLC setup options
 - Windows app debloat and cleanup
+- Xbox App and Battle.net COD configuration installer
+- Guarded Call of Duty shader-cache cleanup and original-file restore
 - Check for Updates button
 - TaC-_-9s themed interface and icons
 
@@ -51,11 +57,15 @@ This downloads the newest TaC-_-9s app, creates a Desktop shortcut, and opens it
 
 Run the app as Administrator after downloading it.
 
+The COD utility can also be downloaded without the full suite:
+
+[Download the latest TaC9 COD Config Installer EXE](https://github.com/Tac-9-Pc-Optimizations/TaC9-COD-Config-Installer/releases/latest/download/TaC-_-9s-COD-Config-Installer.exe)
+
 ## How to Use
 
 1. Download or install the app.
 2. Run the app as Administrator.
-3. Enter and save your license key.
+3. Enter and save your license key for the licensed optimization apps. The COD Config Installer and Socials buttons do not require it.
 4. Choose the app you want to use.
 5. Follow the steps and descriptions inside each app.
 
@@ -65,6 +75,7 @@ Run the app as Administrator after downloading it.
 - Some Windows changes may require a restart.
 - Create a restore point before making major system changes.
 - The GPU app is made for NVIDIA GPUs.
+- Close Call of Duty before installing, restoring, or clearing its shader cache.
 - Read the descriptions before applying settings or removing apps.
 
 ## Support
@@ -82,3 +93,7 @@ For purchases, license help, HWID resets, or support, make a ticket in the TaC-_
 <img width="1265" height="1373" alt="TaC9 ISLC Setup" src="https://github.com/user-attachments/assets/4ad70eae-dcf8-45fd-8730-1baa92c402a4" />
 
 <img width="2550" height="1331" alt="TaC9 Debloat App" src="https://github.com/user-attachments/assets/f942dea5-c890-4fa4-af18-a798520cf9cb" />
+
+### COD Config Installer
+
+![TaC9 COD Config Installer Xbox App view](docs/screenshots/cod-config-installer.png)
