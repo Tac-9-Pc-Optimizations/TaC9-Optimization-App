@@ -22,7 +22,7 @@ Helps install and set up ISLC with options for different amounts of RAM.
 
 Finds Windows apps and system components and lets you choose what you want to remove. After the normal uninstallers finish, TaC9 can scan all selected apps together for leftover files, folders, shortcuts, registry entries, services, and scheduled tasks.
 
-The advanced review window preselects only high-confidence owned leftovers. Shared or uncertain matches remain unchecked, protected Windows areas are excluded, duplicate results are combined, and registry or scheduled-task changes require a verified backup before removal.
+The advanced review window preselects only high-confidence owned leftovers and includes Select Recommended, Select All, and Clear controls. Shared or uncertain matches remain unchecked by default, protected Windows areas are excluded, duplicate results are combined, and registry or scheduled-task changes require a verified backup before removal.
 
 ### COD Config Installer
 
