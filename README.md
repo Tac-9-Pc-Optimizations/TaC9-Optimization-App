@@ -4,8 +4,9 @@ TaC-_-9s PC Optimization Suite is an all-in-one Windows app made for gaming PCs,
 
 Everything is together in one launcher so you do not have to search through folders for each tool.
 
-## Latest Update: 11.2.0.44
+## Latest Update: 11.2.0.45
 
+- Fixed Personal Settings so Explorer-related changes no longer open repeated This PC windows; the shell-only refresh is safely deferred until the required restart
 - Fixed Fresh Open ISLC and Open ISLC so a saved start-minimized setting cannot leave the real ISLC window hidden
 - Updated ISLC free-memory presets to 15000 MB for 32 GB RAM and 30000 MB for 64 GB RAM
 - Moved Check for Updates onto the same aligned row as Save Key, Show HWID, and Clear Key
