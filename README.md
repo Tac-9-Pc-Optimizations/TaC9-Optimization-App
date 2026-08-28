@@ -4,7 +4,7 @@ TaC-_-9s PC Optimization Suite is an all-in-one Windows app made for gaming PCs,
 
 Everything is together in one launcher so you do not have to search through folders for each tool.
 
-## Latest Update: 11.2.0.45
+## Latest Update: 11.2.0.46
 
 - Added one COD Config Installer with separate BOPS7 and MW4 modes
 - Added MW4 support for both Xbox App and Battle.net, including exact store-specific shader-cache detection
