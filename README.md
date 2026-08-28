@@ -4,6 +4,16 @@ TaC-_-9s PC Optimization Suite is an all-in-one Windows app made for gaming PCs,
 
 Everything is together in one launcher so you do not have to search through folders for each tool.
 
+## Latest Update: 11.2.0.42
+
+- Faster, smoother launcher startup with stable first-frame positioning
+- Guarded app buttons that prevent accidental duplicate launches
+- Faster Windows system information and incremental live-setting checks
+- Smoother scrolling and repainting in the Windows Optimization App
+- Real Windows-reported DISM RestoreHealth and SFC /scannow percentages
+- A redesigned progress window with wrapped, aligned text at standard and minimum sizes
+- Restart remains opt-in and requires an explicit Yes selection
+
 ## Included Apps
 
 ### Windows Optimization App
@@ -35,6 +45,7 @@ Installs the embedded TaC9 Call of Duty player configuration for the Xbox App or
 - Windows and system information
 - Gaming and performance options
 - Windows repair and cleanup tools
+- Live DISM and SFC repair percentages reported directly by Windows
 - NVIDIA optimization guide
 - ISLC setup options
 - Windows app debloat and cleanup
@@ -93,6 +104,10 @@ For purchases, license help, HWID resets, or support, make a ticket in the TaC-_
 <img width="1265" height="1373" alt="TaC9 ISLC Setup" src="https://github.com/user-attachments/assets/4ad70eae-dcf8-45fd-8730-1baa92c402a4" />
 
 <img width="2550" height="1331" alt="TaC9 Debloat App" src="https://github.com/user-attachments/assets/f942dea5-c890-4fa4-af18-a798520cf9cb" />
+
+### Live DISM and SFC Progress
+
+![TaC9 Windows Optimization showing live DISM progress reported by Windows](docs/screenshots/live-dism-sfc-progress.png)
 
 ### COD Config Installer
 
