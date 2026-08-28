@@ -20,11 +20,13 @@ Helps install and set up ISLC with options for different amounts of RAM.
 
 ### Debloat App
 
-Finds Windows apps and system components and lets you choose what you want to remove. Apps have names, descriptions, and safety labels to make everything easier to understand.
+Finds Windows apps and system components and lets you choose what you want to remove. After the normal uninstallers finish, TaC9 can scan all selected apps together for leftover files, folders, shortcuts, registry entries, services, and scheduled tasks.
+
+The advanced review window preselects only high-confidence owned leftovers. Shared or uncertain matches remain unchecked, protected Windows areas are excluded, duplicate results are combined, and registry or scheduled-task changes require a verified backup before removal.
 
 ### COD Config Installer
 
-Installs the embedded TaC9 Call of Duty player configuration for the Xbox App or Battle.net version, clears only the selected installation's validated shader cache, and keeps a first-seen backup for one-click restore. This utility is also available as a separate free download and does not require a suite license key.
+Installs the embedded TaC9 Call of Duty player configuration for the Xbox App or Battle.net version, clears only the selected installation's validated shader cache, and keeps a first-seen backup for one-click restore. The utility is included in the suite and does not require a suite license key.
 
 ## Features
 
@@ -36,6 +38,8 @@ Installs the embedded TaC9 Call of Duty player configuration for the Xbox App or
 - NVIDIA optimization guide
 - ISLC setup options
 - Windows app debloat and cleanup
+- Reviewed multi-app leftover cleanup with duplicate detection and safety exclusions
+- Cleanup manifests plus required registry and scheduled-task backups
 - Xbox App and Battle.net COD configuration installer
 - Guarded Call of Duty shader-cache cleanup and original-file restore
 - Check for Updates button
@@ -56,10 +60,6 @@ This downloads the newest TaC-_-9s app, creates a Desktop shortcut, and opens it
 [Download the latest TaC9 PC Optimization Suite EXE](https://github.com/Tac-9-Pc-Optimizations/TaC9-Optimization-App/releases/latest/download/TaC9-PC-Optimization-Suite.exe)
 
 Run the app as Administrator after downloading it.
-
-The COD utility can also be downloaded without the full suite:
-
-[Download the latest TaC9 COD Config Installer EXE](https://github.com/Tac-9-Pc-Optimizations/TaC9-COD-Config-Installer/releases/latest/download/TaC-_-9s-COD-Config-Installer.exe)
 
 ## How to Use
 
