@@ -4,14 +4,17 @@ TaC-_-9s PC Optimization Suite is an all-in-one Windows app made for gaming PCs,
 
 Everything is together in one launcher so you do not have to search through folders for each tool.
 
-## Latest Update: 11.2.0.42
+## Latest Update: 11.2.0.43
 
-- Faster, smoother launcher startup with stable first-frame positioning
+- Clean first visible frame for both the protected suite and Windows Optimization App
+- Full launcher and Windows card layouts are prepared before either window is revealed
+- Removed automatic startup warning popups and competing first-launch layout passes
 - Guarded app buttons that prevent accidental duplicate launches
 - Faster Windows system information and incremental live-setting checks
 - Smoother scrolling and repainting in the Windows Optimization App
 - Real Windows-reported DISM RestoreHealth and SFC /scannow percentages
 - A redesigned progress window with wrapped, aligned text at standard and minimum sizes
+- Reliable Personal Settings worker exit codes, saved diagnostics, and full process-tree cancellation
 - Restart remains opt-in and requires an explicit Yes selection
 
 ## Included Apps
