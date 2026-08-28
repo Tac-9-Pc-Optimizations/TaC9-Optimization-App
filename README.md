@@ -6,6 +6,11 @@ Everything is together in one launcher so you do not have to search through fold
 
 ## Latest Update: 11.2.0.45
 
+- Added one COD Config Installer with separate BOPS7 and MW4 modes
+- Added MW4 support for both Xbox App and Battle.net, including exact store-specific shader-cache detection
+- Refreshed the embedded BOPS7 and MW4 player configuration files
+- Added a shared first-seen MW4 backup so changing platforms cannot replace the customer's original backup with an already-modified file
+- Added strict platform-aware path checks that refuse Xbox and Battle.net shader-cache paths in the wrong mode
 - Fixed Personal Settings so Explorer-related changes no longer open repeated This PC windows; the shell-only refresh is safely deferred until the required restart
 - Fixed Fresh Open ISLC and Open ISLC so a saved start-minimized setting cannot leave the real ISLC window hidden
 - Updated ISLC free-memory presets to 15000 MB for 32 GB RAM and 30000 MB for 64 GB RAM
@@ -45,7 +50,14 @@ The advanced review window preselects only high-confidence owned leftovers and i
 
 ### COD Config Installer
 
-Installs the embedded TaC9 Call of Duty player configuration for the Xbox App or Battle.net version, clears only the selected installation's validated shader cache, and keeps a first-seen backup for one-click restore. The utility is included in the suite and does not require a suite license key.
+The installer now has separate **BOPS7** and **MW4** buttons. Both modes support Xbox App and Battle.net, replace only the two matching player configuration files, clear only the selected installation's validated shader-cache folder, and preserve the customer's first-seen originals for one-click restore. The utility is included in the suite and does not require a suite license key.
+
+- BOPS7 player files: `%LOCALAPPDATA%\Activision\Call of Duty\players`
+- MW4 player files: `%LOCALAPPDATA%\Activision\Call of Duty\playersBeta`
+- MW4 Xbox shader cache: `XboxGames\Call of Duty- Modern Warfare 4- Beta\Content\cod26\shadercache`
+- MW4 Battle.net shader cache: `Call of Duty\_beta_\cod26\shadercache`
+
+The MW4 Xbox and Battle.net modes intentionally share one original-file backup because both stores use the same `playersBeta` destination. Unrelated player files are left alone, and a path that does not match the selected game and platform is refused before any file is changed.
 
 ## Features
 
@@ -60,7 +72,7 @@ Installs the embedded TaC9 Call of Duty player configuration for the Xbox App or
 - Windows app debloat and cleanup
 - Reviewed multi-app leftover cleanup with duplicate detection and safety exclusions
 - Cleanup manifests plus required registry and scheduled-task backups
-- Xbox App and Battle.net COD configuration installer
+- BOPS7 and MW4 configuration installer for Xbox App and Battle.net
 - Guarded Call of Duty shader-cache cleanup and original-file restore
 - Check for Updates button
 - TaC-_-9s themed interface and icons
@@ -120,4 +132,4 @@ For purchases, license help, HWID resets, or support, make a ticket in the TaC-_
 
 ### COD Config Installer
 
-![TaC9 COD Config Installer Xbox App view](docs/screenshots/cod-config-installer.png)
+![TaC9 COD Config Installer showing MW4 Xbox App mode](docs/screenshots/cod-config-installer.png)
