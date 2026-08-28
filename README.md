@@ -4,8 +4,13 @@ TaC-_-9s PC Optimization Suite is an all-in-one Windows app made for gaming PCs,
 
 Everything is together in one launcher so you do not have to search through folders for each tool.
 
-## Latest Update: 11.2.0.43
+## Latest Update: 11.2.0.44
 
+- Fixed Fresh Open ISLC and Open ISLC so a saved start-minimized setting cannot leave the real ISLC window hidden
+- Updated ISLC free-memory presets to 15000 MB for 32 GB RAM and 30000 MB for 64 GB RAM
+- Moved Check for Updates onto the same aligned row as Save Key, Show HWID, and Clear Key
+- Replaced the retired NVIDIA profile with the approved 616.56 full-driver profile
+- Added an Apply NPI Profile Only button beside Automatic Normal Install in the GPU app
 - Clean first visible frame for both the protected suite and Windows Optimization App
 - Full launcher and Windows card layouts are prepared before either window is revealed
 - Removed automatic startup warning popups and competing first-launch layout passes
@@ -25,11 +30,11 @@ Windows performance settings, cleanup tools, repair options, services, networkin
 
 ### GPU Optimization App
 
-A step-by-step NVIDIA setup with GPU detection, clean driver guidance, NVIDIA Profile Inspector, and the 610.88 profile.
+A step-by-step NVIDIA setup with GPU detection, clean driver guidance, NVIDIA Profile Inspector, the 616.56 profile, and a dedicated profile-only apply button.
 
 ### ISLC Setup App
 
-Helps install and set up ISLC with options for different amounts of RAM.
+Helps install and set up ISLC with RAM-specific presets and reliable foreground opening even when ISLC is configured to start minimized.
 
 ### Debloat App
 
