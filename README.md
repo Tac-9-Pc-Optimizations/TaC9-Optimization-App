@@ -4,8 +4,12 @@ TaC-_-9s PC Optimization Suite is an all-in-one Windows app made for gaming PCs,
 
 Everything is together in one launcher so you do not have to search through folders for each tool.
 
-## Latest Update: 11.2.0.48
+## Latest Update: 11.2.0.49
 
+- Updated NVIDIA Profile Inspector from 3.0.2.1 to the verified official 3.0.2.2 release asset
+- Kept the approved 616.56 NVIDIA profile byte-for-byte unchanged during the engine update
+- Updated the in-app GPU tool updater to use the approved v3.0.2.2 tag and verify its official SHA-256 digest
+- Updated the standalone TaC9 Toolbox to 2.2.0.1 while keeping its existing 610.88 NVIDIA profile unchanged
 - Fixed the completion-window error that appeared when every discovered leftover was safely excluded and there were zero removable items
 - Added a tested zero-item summary contract so safe empty scans finish normally with `Refused: 0`
 - Advanced leftover cleanup is now limited to high-confidence app-owned files, folders, and shortcuts
@@ -97,6 +101,8 @@ This downloads the newest TaC-_-9s app, creates a Desktop shortcut, and opens it
 [Download the latest TaC9 PC Optimization Suite EXE](https://github.com/Tac-9-Pc-Optimizations/TaC9-Optimization-App/releases/latest/download/TaC9-PC-Optimization-Suite.exe)
 
 Run the app as Administrator after downloading it.
+
+[Download the standalone TaC9 Toolbox EXE](https://github.com/Tac-9-Pc-Optimizations/TaC9-Optimization-App/releases/latest/download/TaC9-Toolbox-Standalone.exe)
 
 ## How to Use
 
