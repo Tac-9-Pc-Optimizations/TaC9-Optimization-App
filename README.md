@@ -4,8 +4,10 @@ TaC-_-9s PC Optimization Suite is an all-in-one Windows app made for gaming PCs,
 
 Everything is together in one launcher so you do not have to search through folders for each tool.
 
-## Latest Update: 11.2.0.47
+## Latest Update: 11.2.0.48
 
+- Fixed the completion-window error that appeared when every discovered leftover was safely excluded and there were zero removable items
+- Added a tested zero-item summary contract so safe empty scans finish normally with `Refused: 0`
 - Advanced leftover cleanup is now limited to high-confidence app-owned files, folders, and shortcuts
 - Registry entries, services, scheduled tasks, Windows components, drivers, shared runtimes, and Microsoft package data are never removed by leftover cleanup
 - Replaced unrestricted leftover selection with Select Safe and added a second safety check immediately before deletion
