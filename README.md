@@ -4,8 +4,11 @@ TaC-_-9s PC Optimization Suite is an all-in-one Windows app made for gaming PCs,
 
 Everything is together in one launcher so you do not have to search through folders for each tool.
 
-## Latest Update: 11.2.0.46
+## Latest Update: 11.2.0.47
 
+- Advanced leftover cleanup is now limited to high-confidence app-owned files, folders, and shortcuts
+- Registry entries, services, scheduled tasks, Windows components, drivers, shared runtimes, and Microsoft package data are never removed by leftover cleanup
+- Replaced unrestricted leftover selection with Select Safe and added a second safety check immediately before deletion
 - Added one COD Config Installer with separate BOPS7 and MW4 modes
 - Added MW4 support for both Xbox App and Battle.net, including exact store-specific shader-cache detection
 - Refreshed the embedded BOPS7 and MW4 player configuration files
@@ -44,9 +47,9 @@ Helps install and set up ISLC with RAM-specific presets and reliable foreground 
 
 ### Debloat App
 
-Finds Windows apps and system components and lets you choose what you want to remove. After the normal uninstallers finish, TaC9 can scan all selected apps together for leftover files, folders, shortcuts, registry entries, services, and scheduled tasks.
+Finds installed applications and removable Windows apps and lets you choose what you want to uninstall. After the normal uninstallers finish, TaC9 can scan all selected apps together for high-confidence leftover files, folders, and shortcuts.
 
-The advanced review window preselects only high-confidence owned leftovers and includes Select Recommended, Select All, and Clear controls. Shared or uncertain matches remain unchecked by default, protected Windows areas are excluded, duplicate results are combined, and registry or scheduled-task changes require a verified backup before removal.
+The advanced review window includes Select Safe and Clear controls. Shared or uncertain matches remain unselected, duplicate results are combined, and every selected item is checked again before deletion. Windows components, Microsoft package data, drivers, shared runtimes, installer data, registry entries, services, scheduled tasks, and TaC9 runtime files are protected.
 
 ### COD Config Installer
 
@@ -70,8 +73,8 @@ The MW4 Xbox and Battle.net modes intentionally share one original-file backup b
 - NVIDIA optimization guide
 - ISLC setup options
 - Windows app debloat and cleanup
-- Reviewed multi-app leftover cleanup with duplicate detection and safety exclusions
-- Cleanup manifests plus required registry and scheduled-task backups
+- Reviewed multi-app file, folder, and shortcut cleanup with duplicate detection and strict safety exclusions
+- Apply-time refusal checks for protected, shared, system, registry, service, and scheduled-task items
 - BOPS7 and MW4 configuration installer for Xbox App and Battle.net
 - Guarded Call of Duty shader-cache cleanup and original-file restore
 - Check for Updates button
