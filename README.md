@@ -4,8 +4,11 @@ TaC-_-9s PC Optimization Suite is an all-in-one Windows app made for gaming PCs,
 
 Everything is together in one launcher so you do not have to search through folders for each tool.
 
-## Latest Update: 11.2.0.49
+## Latest Update: 11.2.0.50
 
+- Fixed Apply NPI Profile Only reusing an older cached NVIDIA Profile Inspector 3.0.2.1 executable
+- The suite now compares cached and bundled NPI versions, replaces older Desktop copies with 3.0.2.2, and verifies the copied executable before importing the profile
+- Apply NPI Profile Only now stops with a clear error if the replacement cannot be verified instead of silently falling back to an older engine
 - Updated NVIDIA Profile Inspector from 3.0.2.1 to the verified official 3.0.2.2 release asset
 - Kept the approved 616.56 NVIDIA profile byte-for-byte unchanged during the engine update
 - Updated the in-app GPU tool updater to use the approved v3.0.2.2 tag and verify its official SHA-256 digest
