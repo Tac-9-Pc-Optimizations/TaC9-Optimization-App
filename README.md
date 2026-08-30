@@ -13,6 +13,7 @@ Everything is together in one launcher so you do not have to search through fold
 - Removed hidden DISM and SFC completion popups that could remain on the taskbar after Windows finished
 - Final results report whether the image was clean, corruption was repaired, DISM failed or needs a source, system files were clean or repaired, or integrity violations remain
 - Corrected clean-result detection so `No component store corruption detected` cannot be reported as corruption found
+- Pure DISM, SFC, and combined image-repair jobs now skip the unrelated final Mouse/USB/HID safety pass; Personal Settings and optimization jobs still retain it
 - Verified both the standalone-card and cleanup-route monitors with real elevated DISM RestoreHealth and SFC `/scannow` runs
 - Fixed Apply NPI Profile Only reusing an older cached NVIDIA Profile Inspector 3.0.2.1 executable
 - The suite now compares cached and bundled NPI versions, replaces older Desktop copies with 3.0.2.2, and verifies the copied executable before importing the profile
