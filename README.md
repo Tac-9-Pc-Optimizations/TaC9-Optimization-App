@@ -4,8 +4,9 @@ TaC-_-9s PC Optimization Suite is an all-in-one Windows app made for gaming PCs,
 
 Everything is together in one launcher so you do not have to search through folders for each tool.
 
-## Latest Update: 11.2.0.52
+## Latest Update: 11.2.0.53
 
+- Incremented the internal build version so customers on the earlier 11.2.0.52 package receive this replacement through Check for Updates
 - Added **DISM + SFC Full Repair** as the first Windows Image Repair option
 - The combined option runs DISM first, waits for its real process exit, starts SFC `/scannow` automatically, and waits until both phases finish before offering restart
 - Standalone Image Repair, Full System Cleanup repair, and Personal Settings now use the exact live percentages reported by Windows
