@@ -4,13 +4,16 @@ TaC-_-9s PC Optimization Suite is an all-in-one Windows app made for gaming PCs,
 
 Everything is together in one launcher so you do not have to search through folders for each tool.
 
-## Latest Update: 11.2.0.51
+## Latest Update: 11.2.0.52
 
-- Fixed DISM and SFC reaching completion in PowerShell without the Windows app showing their final finished state
-- Added the missing live-output reader to direct Windows Image Repair and hardened the same completion path used by TaC9 Personal Settings
-- DISM and SFC now stay at 100% while TaC9 captures the final Windows result, with no 100-to-99 fallback during finalization
-- Added reliable process-exit waits, final output draining, and protection against partially written final progress records
-- Verified the corrected monitor with real DISM RestoreHealth, SFC scannow, DISM CheckHealth, and SFC verify-only runs
+- Added **DISM + SFC Full Repair** as the first Windows Image Repair option
+- The combined option runs DISM first, waits for its real process exit, starts SFC `/scannow` automatically, and waits until both phases finish before offering restart
+- Standalone Image Repair, Full System Cleanup repair, and Personal Settings now use the exact live percentages reported by Windows
+- The top progress area displays the changing percentage while the lower activity area stays on the DISM start notice until SFC actually starts
+- Removed hidden DISM and SFC completion popups that could remain on the taskbar after Windows finished
+- Final results report whether the image was clean, corruption was repaired, DISM failed or needs a source, system files were clean or repaired, or integrity violations remain
+- Corrected clean-result detection so `No component store corruption detected` cannot be reported as corruption found
+- Verified both the standalone-card and cleanup-route monitors with real elevated DISM RestoreHealth and SFC `/scannow` runs
 - Fixed Apply NPI Profile Only reusing an older cached NVIDIA Profile Inspector 3.0.2.1 executable
 - The suite now compares cached and bundled NPI versions, replaces older Desktop copies with 3.0.2.2, and verifies the copied executable before importing the profile
 - Apply NPI Profile Only now stops with a clear error if the replacement cannot be verified instead of silently falling back to an older engine
@@ -83,6 +86,7 @@ The MW4 Xbox and Battle.net modes intentionally share one original-file backup b
 - Windows and system information
 - Gaming and performance options
 - Windows repair and cleanup tools
+- One-click DISM + SFC full repair with one final restart choice
 - Live DISM and SFC repair percentages reported directly by Windows
 - NVIDIA optimization guide
 - ISLC setup options
